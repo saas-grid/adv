@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sequência dos Atos Processuais no Rito Comum</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-article: #f0f4f8; 
+            --content-bg: #ffffff;
+            --text-main: #2d3436;
+            --accent-blue: #1a73e8;
+        }
+
+        body {
+            background-color: var(--bg-article);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .article-container {
+            max-width: 1100px;
+            margin: 60px auto;
+            background: var(--content-bg);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 { font-size: 2.5rem; color: #1a1a1a; margin-bottom: 10px; line-height: 1.2; }
+        .meta { color: #636e72; font-size: 0.9rem; margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        
+        h2 { margin-top: 40px; color: var(--accent-blue); font-size: 1.6rem; }
+        p { margin-bottom: 20px; text-align: justify; }
+        
+        .flow-list {
+            list-style: none;
+            padding: 0;
+            counter-reset: step-counter;
+        }
+
+        .flow-list li {
+            margin-bottom: 15px;
+            padding-left: 45px;
+            position: relative;
+        }
+
+        .flow-list li::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: var(--accent-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="article-container">
+        <a href="index.html" class="back-link">← Voltar para o Repositório</a>
+        
+        <header>
+            <h1>A Sequência dos Atos Processuais no Rito Comum</h1>
+            <p class="meta">Publicado em 02 de Fevereiro de 2026 • Por Helyson Hirata</p>
+        </header>
+
+        <section class="content">
+            <p>Compreender a marcha processual é fundamental para a gestão de prazos e expectativas no contencioso cível. O rito comum, estabelecido pelo Código de Processo Civil, segue uma lógica sequencial rigorosa visando o contraditório e a ampla defesa.</p>
+
+            <h2>1. Fase Postulatória</h2>
+            <p>Tudo se inicia com a <strong>Petição Inicial</strong>, onde o autor delimita o objeto da lide. Após o despacho positivo, ocorre a <strong>Citação</strong> do réu. Caso não haja autocomposição na audiência de conciliação, abre-se o prazo para a <strong>Contestação</strong>.</p>
+
+            <h2>2. Fase de Saneamento</h2>
+            <p>Após a réplica (ou resposta à contestação), o juiz profere a decisão de saneamento e organização do processo. É aqui que se resolvem as questões pendentes e se definem os pontos controvertidos.</p>
+
+            <ul class="flow-list">
+                <li><strong>Petição Inicial:</strong> Apresentação dos fatos e fundamentos jurídicos.</li>
+                <li><strong>Citação e Contestação:</strong> Exercício do contraditório pelo réu.</li>
+                <li><strong>Réplica:</strong> Oportunidade do autor se manifestar sobre fatos impeditivos ou modificativos.</li>
+                <li><strong>Saneamento:</strong> O magistrado organiza o processo e defere provas.</li>
+                <li><strong>Instrução:</strong> Produção de provas periciais ou testemunhais em audiência.</li>
+                <li><strong>Sentença:</strong> O ato que encerra a fase de conhecimento.</li>
+            </ul>
+
+            <h2>3. Conclusão</h2>
+            <p>O encadeamento lógico desses atos garante que a decisão final (julgamento) seja baseada em um processo maduro e devidamente instruído, evitando nulidades futuras.</p>
+        </section>
+
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px dashed #ddd; font-size: 0.8rem; color: #999;">
+            <p>Este é um artigo de caráter técnico e informativo para fins de demonstração do repositório Painel ADV.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

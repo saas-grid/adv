@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "A Sequência dos Atos Processuais no Rito Comum",
+    "arquivo": "2026-fluxo-processo.html",
+    "tags": ["processo civil", "teoria", "procedimento"],
+    "data": "2026-02-02"
+  },
+{
+    "titulo": "Os atos processuais em inglês",
+    "arquivo": "2026-atos-processuais-em-ingles.html",
+    "tags": ["processo civil", "vocabulário", "procedimento"],
+    "data": "2026-02-04"
+  },
+  {
+    "titulo": "Prova técnica em ações de consumo de água",
+    "arquivo": "2026-prova-agua.html",
+    "tags": ["processo civil", "prova", "consumo"],
+    "data": "2026-01-28"
+  },
+  {
+    "titulo": "Responsabilidade Civil e Inteligência Artificial",
+    "arquivo": "2026-responsabilidade-ia.html",
+    "tags": ["tecnologia", "civil", "ia"],
+    "data": "2026-01-15"
+  },
+  {
+    "titulo": "A inversão do ônus da prova no CDC",
+    "arquivo": "2025-onus-prova.html",
+    "tags": ["consumidor", "prova", "processo civil"],
+    "data": "2025-12-10"
+  },
+  {
+    "titulo": "Honorários Sucumbenciais: Novas Teses do STJ",
+    "arquivo": "2025-honorarios-stj.html",
+    "tags": ["processo civil", "honorarios", "stj"],
+    "data": "2025-11-20"
+  },
+  {
+    "titulo": "Limites da busca e apreensão domiciliar",
+    "arquivo": "2025-busca-apreensao.html",
+    "tags": ["penal", "constitucional", "processo penal"],
+    "data": "2025-10-05"
+  }
+]
