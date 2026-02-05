@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerir Ferramenta | Grid ADV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    Grid <span>ADV</span>
+  </a>
+  <a href="index.html" class="nav-link">Voltar</a>
+</header>
+
+<main>
+    <div class="sugestao-container">
+        <section class="info-section">
+            <h1>Sugira uma ferramenta para o Grid ADV</h1>
+            <p>Se você sente falta de uma planilha, formulário ou calculadora que simplificaria seu trabalho, envie sua sugestão.</p>
+            
+            <h2>O que você pode sugerir?</h2>
+            <ul>
+                <li>Planilhas de controle (prazos, processos, honorários).</li>
+                <li>Calculadoras jurídicas ou financeiras.</li>
+                <li>Questionários para triagem e atendimento inicial.</li>
+                <li>Checklists por tipo de ação ou organização interna.</li>
+            </ul>    
+
+            <div class="disclaimer-box">
+                <strong>Construção Colaborativa:</strong> Este espaço não se destina à contratação de serviços personalizados. As sugestões enviadas são analisadas e, se viáveis, disponibilizadas gratuitamente para todos os usuários do projeto.
+            </div>
+        </section>
+
+        <aside class="form-container">
+            <div class="form-card">
+                <form name="sugestao-ferramenta" method="POST" action="/sucesso.html" data-netlify="true">
+                    <div class="input-group">
+                        <label for="nome">Seu Nome ou Escritório</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Silva & Associados" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva a ferramenta que gostaria que fosse desenvolvida ou o problema que gostaria de resolver." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contato">E-mail ou WhatsApp (Opcional)</label>
+                        <input type="text" id="contato" name="contato" placeholder="seuemail@contato.com" oninput="toggleConsent()">
+                    </div>
+
+                    <div id="consent-box" class="consent-text">
+                        ✓ Ao informar seus dados, você autoriza nosso contato para tratar de eventuais dúvidas sobre a sugestão enviada.
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Sugestão</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+  <nav>
+    <a href="sobre.html">Sobre</a>
+    <a href="apoie.html">Apoie</a>
+  </nav>
+  <p>Projeto desenvolvido por Helyson Hirata</p>
+  <p>&copy; 2026 Grid ADV</p>
+</footer>
+
+<script>
+    function toggleConsent() {
+        const input = document.getElementById('contato');
+        const consent = document.getElementById('consent-box');
+        // Mostra o aviso se houver qualquer texto no campo de contato
+        if (input.value.trim().length > 0) {
+            consent.classList.add('visible');
+        } else {
+            consent.classList.remove('visible');
+        }
+    }
+</script>
+
+</body>
+</html>
